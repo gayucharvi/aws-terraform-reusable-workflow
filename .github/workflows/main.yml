@@ -1,0 +1,9 @@
+name: Deploy
+on: workflow_dispatch
+        
+jobs:
+  my-job:
+    uses: gayucharvi/aws-terraform-reusable-workflow/.github/workflows/terraform-reusable.yml@main
+    with:
+      runs-on: ubuntu-latest
+  
